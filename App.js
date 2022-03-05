@@ -102,22 +102,22 @@ function App() {
   const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
-    CONTRACT_ADDRESS: "",
-    SCAN_LINK: "",
+    CONTRACT_ADDRESS: "0xF27C24af06C033EF93d22Ac5582ff8b51ab4F21C",
+    SCAN_LINK: "https://polygonscan.com/token/0xf27c24af06c033ef93d22ac5582ff8b51ab4f21c",
     NETWORK: {
-      NAME: "",
-      SYMBOL: "",
-      ID: 0,
+      NAME: "Polygon",
+      SYMBOL: "MATIC",
+      ID: 137,
     },
-    NFT_NAME: "",
-    SYMBOL: "",
-    MAX_SUPPLY: 1,
-    WEI_COST: 0,
-    DISPLAY_COST: 0,
-    GAS_LIMIT: 0,
-    MARKETPLACE: "",
-    MARKETPLACE_LINK: "",
-    SHOW_BACKGROUND: false,
+    NFT_NAME: "Noobie Zombies Gang NFT",
+    SYMBOL: "NZG",
+    MAX_SUPPLY: 10000,
+    WEI_COST: 1129217254014860000,
+    DISPLAY_COST: 20,
+    GAS_LIMIT: 285000,
+    MARKETPLACE: "Opeansea",
+    MARKETPLACE_LINK: "https://opensea.io/collection/noobiezombiesgang",
+    SHOW_BACKGROUND: true,
   });
 
   const claimNFTs = () => {
